@@ -1,0 +1,20 @@
+{
+  "name": "ts-minimal-boilerplate",
+  "version": "1.0.0",
+  "description": "Minimal boilerplate setup for Typescript project.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node ./dist/main.js"
+  },
+  "author": "Alan Gustavo Valdez Cascajares",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.0.23",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  }
+}
